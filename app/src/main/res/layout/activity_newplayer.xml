@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imagePerson"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_column="0"
@@ -22,7 +22,7 @@
             app:srcCompat="@drawable/ic_person_foreground" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/textPersonName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -37,7 +37,7 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/textPhoneticName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -52,7 +52,7 @@
         android:layout_height="match_parent">
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/textNickname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -102,7 +102,7 @@
             app:srcCompat="@drawable/ic_phone_foreground" />
 
         <EditText
-            android:id="@+id/editTextPhone2"
+            android:id="@+id/textPhone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -136,7 +136,7 @@
             app:srcCompat="@drawable/ic_email_foreground" />
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/textEmailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"

@@ -71,7 +71,8 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_column="0"
-            app:srcCompat="@drawable/ic_photo_foreground" />
+            app:srcCompat="@drawable/ic_photo_foreground"
+            android:layout_gravity="center"/>
 
         <ImageView
             android:id="@+id/imageView5"

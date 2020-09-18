@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PLAY JUEGOS</string>
+    <string name="button1">PLAY</string>
+    <string name="button2">NEW PLAYER</string>
+    <string name="button3">PREFERENCES</string>
+    <string name="button4">ABOUT</string>
+
+    <string name="Name">Name</string>
+    <string name="PhoneticName">Phonetic name</string>
+    <string name="Nickname">Nickname</string>
+    <string name="tlf">Telefono</string>
+    <string name="email">Email</string>
+
+</resources>

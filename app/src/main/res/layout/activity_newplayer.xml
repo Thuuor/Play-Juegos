@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"></include>
+
+<TableLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
@@ -83,11 +90,13 @@
 
         <Button
             android:id="@+id/button5"
+            style="@style/MyStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="2"
-            android:text="Button"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:shadowColor="#000000"
+            android:text="Button" />
     </TableRow>
 
     <TableRow
@@ -146,3 +155,5 @@
             android:text="@string/email"/>
     </TableRow>
 </TableLayout>
+
+</LinearLayout>

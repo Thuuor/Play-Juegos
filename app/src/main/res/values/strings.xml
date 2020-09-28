@@ -11,4 +11,8 @@
     <string name="tlf">Telefono</string>
     <string name="email">Email</string>
 
+    <string name="action_settings">Opciones</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_add">Añadir</string>
+
 </resources>

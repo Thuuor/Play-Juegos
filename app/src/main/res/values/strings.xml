@@ -15,4 +15,6 @@
     <string name="action_search">Buscar</string>
     <string name="action_add">Añadir</string>
 
+    <string name="fab">fab</string>
+
 </resources>

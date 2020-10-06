@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
             lanzarNewPlayer()
         }
 
+        val pref = findViewById(R.id.button3) as Button
+        pref.setOnClickListener {
+            lanzarPreferences()
+        }
+
         val titulo = findViewById(R.id.titulo) as TextView
         titulo.setTypeface(Typeface.createFromAsset(assets, "Courgette-Regular.ttf"))
 
@@ -34,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
     fun lanzarGenero(){
         val i = Intent(this,Generos::class.java)
+        startActivity(i)
+    }
+
+    fun lanzarPreferences(){
+        val i = Intent(this,Preferences::class.java)
         startActivity(i)
     }
 

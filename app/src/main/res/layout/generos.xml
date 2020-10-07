@@ -7,6 +7,73 @@
     tools:context=".Generos">
 
 
+    <TextView
+        android:id="@+id/textPlataforma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="15dp"
+        android:text="@string/textPlataforma"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingTop="50dp">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_ps4"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PS4" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_pc"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PC" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_xbox"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XBOX" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_wii"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WII" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_wiiu"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIIU" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_3ds"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3DS" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_x360"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X360" />
+    </com.google.android.material.chip.ChipGroup>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottom_appbar"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"

@@ -25,11 +25,21 @@ class MainActivity : AppCompatActivity() {
             lanzarPreferences()
         }
 
+        val games = findViewById(R.id.button1) as Button
+        games.setOnClickListener{
+            lanzarGames()
+        }
+
         val titulo = findViewById(R.id.titulo) as TextView
         titulo.setTypeface(Typeface.createFromAsset(assets, "Courgette-Regular.ttf"))
 
         val toolbar = findViewById(R.id.toolbar) as Toolbar
         setSupportActionBar(toolbar)
+    }
+
+    fun lanzarGames(){
+        val i = Intent(this,Games::class.java)
+        startActivity(i)
     }
 
     fun lanzarNewPlayer(){

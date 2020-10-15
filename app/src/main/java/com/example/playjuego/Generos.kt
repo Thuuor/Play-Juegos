@@ -2,6 +2,7 @@ package com.example.playjuego
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import android.widget.RadioGroup
@@ -14,7 +15,6 @@ import com.google.android.material.snackbar.Snackbar
 
 class Generos : AppCompatActivity() {
     var option : String = "No has elegido ninguna opcion"
-    var checked = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,17 +33,12 @@ class Generos : AppCompatActivity() {
             override fun onCheckedChanged(group: ChipGroup, checkedId: Int) {
                 val checkedChip = group.findViewById<Chip>(checkedId)
                 option = checkedChip.text as String
-                checked = true
             }
         })
 
-        fab.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                if (checked) {
-                    Toast.makeText(getApplicationContext(), option, Toast.LENGTH_LONG).show();
-                }
-                Toast.makeText(getApplicationContext(), option, Toast.LENGTH_LONG).show();
-            }
-        })
+        fab.setOnClickListener{
+            Snackbar.make(it,option,Snackbar.LENGTH_LONG).show()
+        }
+
     }
 }

@@ -32,13 +32,12 @@ class Generos : AppCompatActivity() {
 
             override fun onCheckedChanged(group: ChipGroup, checkedId: Int) {
                 val checkedChip = group.findViewById<Chip>(checkedId)
-                option = checkedChip.text as String
+                option = checkedChip.text.toString()
+                Toast.makeText(applicationContext,option,Toast.LENGTH_LONG).show()
             }
-        })
 
-        fab.setOnClickListener{
-            Snackbar.make(it,option,Snackbar.LENGTH_LONG).show()
-        }
+
+        })
 
     }
 }

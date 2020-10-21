@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.Button
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
@@ -39,5 +41,30 @@ class Generos : AppCompatActivity() {
 
         })
 
+        val items = ArrayList<Tarjeta>()
+        items.add(Tarjeta(R.string.note1))
+        items.add(Tarjeta(R.string.note2))
+        items.add(Tarjeta(R.string.note3))
+        items.add(Tarjeta(R.string.note4))
+        items.add(Tarjeta(R.string.note5))
+        items.add(Tarjeta(R.string.note6))
+        items.add(Tarjeta(R.string.note7))
+        items.add(Tarjeta(R.string.note8))
+        items.add(Tarjeta(R.string.note9))
+        items.add(Tarjeta(R.string.note9))
+        items.add(Tarjeta(R.string.note9))
+        items.add(Tarjeta(R.string.note9))
+
+        val recView = findViewById<RecyclerView>(R.id.recyclerView)
+
+        recView.setHasFixedSize(true)
+
+        val adaptador = CardsAdapter(items)
+        recView.adapter = adaptador
+        recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        adaptador.onClick = {
+            Toast.makeText(this@Generos, items.get(recView.getChildAdapterPosition(it)).cadena, Toast.LENGTH_LONG).show()
+        }
     }
 }

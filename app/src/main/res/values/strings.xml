@@ -18,5 +18,16 @@
     <string name="fab">fab</string>
 
     <string name="textPlataforma">Plataformas:</string>
+    <string name="textGeneros">Generos:</string>
+
+    <string name="note1">Accion</string>
+    <string name="note2">Aventura</string>
+    <string name="note3">Deportes</string>
+    <string name="note4">Disparos</string>
+    <string name="note5">Estrategia</string>
+    <string name="note6">Lucha</string>
+    <string name="note7">Musical</string>
+    <string name="note8">Rol</string>
+    <string name="note9">Simulacion</string>
 
 </resources>

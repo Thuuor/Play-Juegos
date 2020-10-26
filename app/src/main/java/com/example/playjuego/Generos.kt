@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.RadioGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomappbar.BottomAppBar
@@ -51,9 +52,7 @@ class Generos : AppCompatActivity() {
         items.add(Tarjeta(R.string.note7))
         items.add(Tarjeta(R.string.note8))
         items.add(Tarjeta(R.string.note9))
-        items.add(Tarjeta(R.string.note9))
-        items.add(Tarjeta(R.string.note9))
-        items.add(Tarjeta(R.string.note9))
+
 
         val recView = findViewById<RecyclerView>(R.id.recyclerView)
 
@@ -62,6 +61,8 @@ class Generos : AppCompatActivity() {
         val adaptador = CardsAdapter(items)
         recView.adapter = adaptador
         recView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+
+        recView.addItemDecoration(DividerItemDecoration(this,DividerItemDecoration.VERTICAL))
 
         adaptador.onClick = {
             Toast.makeText(this@Generos, items.get(recView.getChildAdapterPosition(it)).cadena, Toast.LENGTH_LONG).show()

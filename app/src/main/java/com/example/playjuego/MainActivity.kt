@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
             lanzarGames()
         }
 
+        val about = findViewById(R.id.button4) as Button
+        about.setOnClickListener{
+            lanzarAbout()
+        }
+
         val titulo = findViewById(R.id.titulo) as TextView
         titulo.setTypeface(Typeface.createFromAsset(assets, "Courgette-Regular.ttf"))
 
@@ -54,6 +59,11 @@ class MainActivity : AppCompatActivity() {
 
     fun lanzarPreferences(){
         val i = Intent(this,Preferences::class.java)
+        startActivity(i)
+    }
+
+    fun lanzarAbout(){
+        val i = Intent(this,About::class.java)
         startActivity(i)
     }
 
